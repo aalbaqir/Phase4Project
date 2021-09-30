@@ -1,0 +1,85 @@
+.login-form{
+    padding:  30px;
+    padding-top: 15px;
+    background: rgba(105, 4, 66, 0.185);
+    margin-top: 50px;
+    /* margin-left:500px; */
+    /* margin-right: 500px; */
+}
+
+.avatar{
+    max-height:200px;
+   max-width: 200px;
+
+    /* justify-content: flex-start; */
+}
+
+.user-container{
+    padding-bottom: 20px;
+    padding-right: 75px;
+}
+
+label.user{
+    padding: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+
+
+}
+
+label.pass{
+    padding: 15px;
+    padding-bottom: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+
+
+}
+
+.passinput{
+    background-color:rgba(255, 255, 255, 0.767);
+    padding-top: 5px;
+    padding-bottom:5px;
+    color:black;
+}
+
+.userinput{
+    background-color:rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom:5px;
+    color:black;
+}
+.userinput.text{
+    color:black;
+}
+
+
+
+.login{
+    /* padding: 15px; */
+    margin-left: 10px;
+    background-color: rgba(77, 0, 55, 0.733);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 10px;
+    
+
+}
+.login:hover {
+    border: 2px solid transparent;
+    color: #dfdfdf;
+    transform: scale(1.05);
+}
+.container.psw{
+    font-family: roboto;
+
+}

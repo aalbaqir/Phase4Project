@@ -33,8 +33,7 @@ check any of the options such as 'Add a README file', 'Add a .gitignore file',
 etc — since you're importing an existing repository, creating any of those files
 on GitHub will cause issues.
 
-[create repo]: https://docs.github.com/en/github/importing-your-projects-to-github/importing-source-code-to-github/adding-an-existing-project-to-github-using-the-command-line#adding-a-project-to-github-without-github-cli
-
+[create repo]: g
 If you're working with a partner,
 [add them as a collaborator][add collaborator] on GitHub. From your repo on
 GitHub, go to Settings > Manage Access > Invite a collaborator and enter your

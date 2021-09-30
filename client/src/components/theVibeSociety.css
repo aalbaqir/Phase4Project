@@ -1,0 +1,28 @@
+
+
+
+.dontQuoteMe{
+    background-color: rgba(2, 131, 160, 0.438);
+    padding: 12px;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    border-style: outset;
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    float:inline-start;
+    top: 30%;
+    transform: translate(50%, 50%);
+    width: 50%;
+    text-align: center;
+}
+
+
+.dontQuoteMe:hover {
+    border: 2px solid transparent;
+    color:lightcyan;
+    transform: scale(1.10) translate(45%, 50%);
+    border-style: groove;
+
+}
+
