@@ -1,22 +1,25 @@
 .login-form{
     padding:  30px;
     padding-top: 15px;
-    background: rgba(105, 4, 66, 0.185);
+    background: rgba(232, 82, 195, 0.418);
     margin-top: 50px;
     /* margin-left:500px; */
     /* margin-right: 500px; */
 }
 
-.avatar{
+
+
+.imgcontainer{
     max-height:200px;
    max-width: 200px;
+   /* position: absolute; */
 
     /* justify-content: flex-start; */
 }
 
 .user-container{
     padding-bottom: 20px;
-    padding-right: 75px;
+    padding-right: 70px;
 }
 
 label.user{
@@ -60,7 +63,7 @@ label.pass{
 .login{
     /* padding: 15px; */
     margin-left: 10px;
-    background-color: rgba(77, 0, 55, 0.733);
+    background-color: rgba(39, 2, 36, 0.809);
     border: none;
     color: rgb(255, 255, 255);
     padding: 10px 20px;
@@ -83,3 +86,129 @@ label.pass{
     font-family: roboto;
 
 }
+
+.avatar{
+    display: block;
+    margin-left: 90%;
+    /* margin-right: auto; */
+    /* width: 50%; */
+}
+
+.SignUp-form{
+    padding:  30px;
+    padding-top: 15px;
+    background: rgba(105, 4, 66, 0.185);
+    margin-top: 50px;
+    /* margin-left:500px; */
+    /* margin-right: 500px; */
+}
+
+/* //////////////// */
+
+
+.login-form2{
+    padding:  30px;
+    padding-top: 15px;
+    background: rgba(3, 130, 158, 0.761);
+    margin-top: 50px;
+    /* margin-left:500px; */
+    /* margin-right: 500px; */
+}
+
+.login-image {
+    /* filter: blur(8px); */
+    -webkit-filter: blur(4px);
+    /* height: 100%; */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* padding-right: 100px; */
+    /* max-width: fit-content; */
+    position: fixed;
+  }
+
+
+.edit-profile{
+    padding:  30px;
+    padding-top: 15px;
+    background: rgba(162, 198, 213, 0.562);
+    margin-top: 50px;
+    /* margin-left:500px; */
+    /* margin-right: 500px; */
+}
+
+
+
+
+.user-container{
+    padding-bottom: 20px;
+    padding-right: 70px;
+}
+
+label.user{
+    padding: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+
+
+}
+
+label.pass{
+    padding: 15px;
+    padding-bottom: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+
+
+}
+
+.profilepic{
+    background-color:rgba(255, 255, 255, 0.767);
+    padding-top: 5px;
+    padding-bottom:5px;
+    color:black;
+    margin-right: 18%;
+
+}
+
+.profilebio{
+    background-color:rgb(255, 255, 255);
+    padding-top: 5px;
+    padding-bottom:5px;
+    color:black;
+}
+.userinput.text{
+    color:black;
+}
+
+
+
+.bio-button{
+    /* padding: 15px; */
+    margin-left: 10px;
+    background-color: rgba(0, 9, 77, 0.733);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 10px;
+    
+
+}
+.login:hover {
+    border: 2px solid transparent;
+    color: #dfdfdf;
+    transform: scale(1.05);
+}
+.container.psw{
+    font-family: roboto;
+
+}
+

@@ -1,0 +1,86 @@
+.column {
+    float: left;
+    /* width: 60%; */
+    padding-left: 40%;
+  }
+
+  .column2 {
+    float: left;
+    width: 60%;
+    margin-left: 20%;
+    padding: 10px;
+  }
+  
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+    /* padding-left: 10px; */
+
+  }
+
+
+  .edit{
+
+    margin-left: 10px;
+    background-color: rgba(0, 9, 77, 0.733);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 10px;
+
+}
+
+
+.entry{
+    padding: 25px;
+    padding-left: 150px;
+    padding-right: 100px;
+    margin-right: 5%;
+    text-align: justify;
+
+    
+}
+
+
+.journal-button{
+    margin-left: 10px;
+    background-color: rgba(0, 9, 77, 0.733);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 10px;
+}
+
+.journal{
+    /* text-align: center; */
+    /* margin-right: 40%; */
+
+    /* position: fixed; */
+}
+
+.delete-button:hover{
+    
+    border: 2px solid transparent;
+    color: #00065f;
+    transform: scale(1.15);
+      border: 2px solid transparent;
+      color: #010543;
+      transform: scale(1.05);
+      /* will-change: transform; */
+    
+}

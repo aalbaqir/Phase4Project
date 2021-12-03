@@ -1,0 +1,77 @@
+// import './YourVibes.css';
+// import { useState, useEffect } from 'react';
+
+
+// function YourVibes() {
+
+// // This is someone's personal vibe page that features content that the like
+// // Ideally the page will be split into columns. There can also be a journal-like
+// // feature where the person writes about their day, dreams, or aspiration.
+// // Instead of of two columns, this would be better as a toggle feature,
+// // so users can toggle between their journal and their wall.
+
+// const [journal, setJournal] = useState ('')
+// const [entry, setEntry] = useState([])
+
+
+// useEffect(() => {
+//     fetch("http://localhost:3000/journals")
+//     .then(response =>response.json())
+//     .then(fetchedjournals=>{
+//       // console.log(fetchedjournals)
+//       setJournal(fetchedjournals)});
+      
+//     },[])
+
+//     console.log(journal)
+
+    
+//     // function onChange(e){
+//     //     e.preventDefault()
+//     //     const newJournal = {
+//     //         entry
+            
+//     //     }
+    
+//     //     fetch('/journals',{
+//     //         method: "POST",
+//     //         headers:{'Content-Type':'application/json'},
+//     //         body:JSON.stringify(newJournal)
+//     //     })
+    
+//     //     alert("New Entry")
+      
+    
+//     // }
+
+
+
+
+// return (<div>
+     
+//    {journal.map(eachEntry=>{ console.log(eachEntry)
+
+//    return(<>
+    
+//     <div class="row">
+//   <div class="column">
+
+//       <h2>Your Vibes</h2>
+//   </div>
+//   <div class="column">
+//       <h2>Your Journal</h2>
+//       <h3>{eachEntry.entry}</h3>
+//       <h3>{eachEntry.user_id}</h3>
+//   </div>
+//     <input className="journal" type="text" value={entry} onChange={(e)=>setEntry(e.target.value)} placeholder="What's On Your Mind?" name="entry" required/>
+//      <button className="journal-button" type="submit"> Submit Entry</button>
+//     </div> 
+    
+//      </>)}   
+//    )}
+    
+    
+//     </div>)
+// }
+
+// export default YourVibes;

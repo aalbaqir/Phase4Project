@@ -1,3 +1,6 @@
 class ProfileSerializer < ActiveModel::Serializer
-  attributes :id, :belongs_to, :picture, :bio
+  attributes :username, :picture, :bio
+
+
+  # has_many: journals
 end

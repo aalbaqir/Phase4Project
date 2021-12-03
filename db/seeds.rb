@@ -8,20 +8,18 @@
 puts "Seeding"
 
 Journal.destroy_all
-Profile.destroy_all
 Quote.destroy_all
-User.destroy_all 
+User.destroy_all  
 
 
 
 puts "Seeding Users"
-7.times do
-username = Faker::Games::SuperMario.unique.character
-password = Faker::Nation.unique.language
-users = User.create(username:username, password_digest:password)
-
-puts "Done Seeding"
-
+20.times do
+    username = Faker::Games::SuperMario.unique.character
+    password = "password"
+    picture = Faker::Avatar.image
+    bio = Faker::Quote.yoda
+    User.create!(username: username, password: password, picture: picture, bio: bio)
 end
 
 
@@ -31,23 +29,25 @@ puts "Seeding Journals"
 25.times do
 entry = Faker::Quote.matz
 user_id = User.all.sample.id
-journals = Journal.create(entry:entry, user_id:user_id)
+Journal.create(entry:entry, user_id:user_id)
 end
 
 
-puts "Seeding Profiles"
-10.times do
-user_id = User.all.sample.id
-picture = Faker::Avatar.image
-bio = Faker::Quote.yoda
-profiles = Profile.create(user_id:user_id,  picture:picture, bio:bio )
-end
+# puts "Seeding Profiles"
+# 10.times do
+# user_id = User.all.sample.id
+# picture = Faker::Avatar.image
+# bio = Faker::Quote.yoda
+# profiles = Profile.create(user_id:user_id,  picture:picture, bio:bio )
+# end
+
 
 
 puts "Seeding Quotes"
 25.times do
 text =Faker::Quotes::Shakespeare.romeo_and_juliet_quote
 author = "Shakespeare"
-quotes = Quote.create(text:text, author:author)
+Quote.create(text:text, author:author)
 end
 
+puts "Done Seeding"

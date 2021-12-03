@@ -2,7 +2,7 @@ class ApplicationController < ActionController::API
   include ActionController::Cookies
 
 
-  private
+  # private
 
   def current_user
     User.first

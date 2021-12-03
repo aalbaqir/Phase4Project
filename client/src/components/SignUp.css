@@ -1,0 +1,140 @@
+.SignUp-image{
+  /* filter: blur(8px); */
+  -webkit-filter: blur(4px);
+  /* height: 100%; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  /* padding-right: 100px; */
+  /* max-width: fit-content; */
+  position: fixed;
+}
+
+
+
+.SignUp-form{
+    color: white;
+    font-weight: bold;
+    border: 4px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 40%;
+    padding: 20px;
+    /* padding-bottom: 30px; */
+    text-align: center;
+    margin-top: 25px;
+
+}
+.suser-container{
+    padding-bottom: 20px;
+    padding-right: 35px;
+
+}
+
+.suser{
+    /* padding: 2px; */
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+
+
+
+}
+
+.spassword-container{
+    
+    padding: 15px;
+    padding-bottom: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+    padding-right: 11%;
+
+
+}
+
+.conpassword-container{
+    padding: 10px;
+    padding-bottom: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+    padding-right: 5%;
+
+
+}
+
+.suserinput{
+    border-style: inset;
+    padding: 5px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+}
+.spassinput{
+    border-style: inset;
+    background-color:rgba(255, 255, 255, 0.767);
+    /* padding-top: 5px;
+    padding-bottom:5px; */
+    color:black;
+    padding: 8px;
+    padding-left:20px;
+    font-size:small
+
+}
+
+.spass{
+
+    padding: 15px;
+    padding-bottom: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+
+
+
+}
+
+.myavatar{
+    display: block;
+    margin-left: 100%;
+    /* size: 200%; */
+}
+
+label.suser{
+    padding: 10px;
+    color: rgb(77, 0, 55);
+    font-size: 16px;
+    font-family: roboto;
+}
+
+button.SignUp{
+    margin-left: 10px;
+    background-color: rgba(77, 0, 55, 0.733);
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+    margin-left: 10px;
+    
+}
+
+.SignUp:hover {
+    border: 2px solid transparent;
+    color: #dfdfdf;
+    transform: scale(1.05);
+}
+
+
+
+.body{
+    background-color: beige;
+}

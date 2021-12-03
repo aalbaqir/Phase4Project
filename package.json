@@ -11,6 +11,14 @@
     "heroku-postbuild": "npm run clean && npm run build && npm run deploy"
   },
   "dependencies": {
-    "react-router-dom": "^5.3.0"
+    "react-router-dom": "^5.3.0",
+    "yarn": "^1.22.15"
+  },
+  "devDependencies": {
+    "react-scripts": "^4.0.3",
+    "web-vitals": "^2.1.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
   }
 }

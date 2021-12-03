@@ -1,4 +1,3 @@
-// Home page will be strictrly visual display a reel of POSITIVE QUOTES
 import './Home.css';
 
 function Home() {

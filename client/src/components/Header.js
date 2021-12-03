@@ -4,7 +4,7 @@ import NavBar from './NavBar';
 // import logoUrl from '../../assets/logo.svg';
 const Header = () => (<>
   <div className="header">
-  <NavBar/>
+  <NavBar />
  
  </div>
     
