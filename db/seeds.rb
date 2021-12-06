@@ -26,7 +26,7 @@ end
 
 puts "Seeding Journals"
 
-25.times do
+10.times do
 entry = Faker::Quote.matz
 user_id = User.all.sample.id
 Journal.create(entry:entry, user_id:user_id)

@@ -5,6 +5,8 @@ import {NavLink} from 'react-router-dom'
 
 
 function YourVibes(props) {
+
+  console.log(props)
 // This is someone's personal vibe page that features content that the like
 // Ideally the page will be split into columns. There can also be a journal-like
 // feature where the person writes about their day, dreams, or aspiration.
@@ -16,6 +18,9 @@ const [entry, setEntry] = useState([])
 const [profile, setProfile] = useState ([])
 const [user, setUser] = useState(null);
 const [byeuser, setByeUser] = useState("");
+const  [toggle, setToggle] = useState(true)
+const [edit, setEdit] = useState("")
+
    
 
     
@@ -54,21 +59,26 @@ useEffect(() => {
         
             console.log("Journal Me Baby!")
             e.preventDefault()
-            const newJournal = {
+            const journalEntry = {
                 entry
+                // user_id: 
                 
             }
-            console.log(newJournal)
+
+          
+            // console.log(newJournal)
             fetch("http://localhost:3000/journals", {
                 method: "POST",
                 headers:{'Content-Type':'application/json',
                         'Accept': 'application/json'
             },
-                body:JSON.stringify(entry)
+                body:JSON.stringify(journalEntry)
             })
         
             alert("New Entry")
             
+            setJournal(oldj=>oldj.concat({entry}))
+            setEntry("") 
 
         }       
         
@@ -111,7 +121,56 @@ function handleDelete() {
  function handleEdit(){
         
 
- }                 
+ }     
+ 
+ 
+
+
+function editToggle(e){
+  e.preventDefault()
+  console.log("edit!!!!")
+  setToggle(false)
+
+}
+
+function submitButtom(e) {
+  setToggle(true)
+
+  e.preventDefault()
+  console.log("submit")
+
+
+  const editted = {
+    edit
+  
+}
+
+
+
+
+// console.log(name)
+fetch("http://localhost:3000/journals", {
+    method: "PATCH",
+    headers:{'Content-Type':'application/json',
+            'Accept': 'application/json'
+},
+    body:JSON.stringify({editted})
+
+    
+})
+// console.log(picture)
+
+setEdit(edit)
+
+
+
+
+
+}
+
+
+
+
 
 return(<div>
      <NavLink onClick={handleLogout} className="logout-button" to="./logout">
@@ -122,8 +181,11 @@ return(<div>
            
             <div class="row">
                 <form onSubmit={handleSubmit} className="journal">
+                  <br></br>
                             <h2>Journal Your Current Vibes</h2>
-                            <input className="entry" type="text" onChange={(e)=>setEntry(e.target.value)} placeholder="What's On Your Mind?" name="entry" required/>
+                            <br></br>
+
+                            <input className="entry" type="text" value={entry} onChange={(e)=>setEntry(e.target.value)} placeholder="What's On Your Mind?" name="entry" required/>
                         <button  className="journal-button" type="submit"> Submit Entry</button>
                 </form>        
                    
@@ -132,18 +194,40 @@ return(<div>
             </div> 
             {journal.map(eachEntry=>{ console.log(eachEntry) 
             
-      return(          
-                 
-                        <div class="column2">
+            return(<>
+         
+                     <div class="column2">
                         <h3>{eachEntry.entry}</h3>
-                        <button className="edit">edit</button>
                         </div>
-                
+            
+                {/* { toggle ?
+
+              
+                        <div class="column2"> 
+                        <button onClick={editToggle} className="edit">edit</button>
+                        </div> 
            
-        )  
+                        
+                      
+                      :
+                        
+                        <div class="column2">
+                          <input className="editbox" type="text" value={edit} onChange={(e)=>setEdit(e.target.value)} placeholder="Edit Your Comment" name="edit"/>
+                          <button onClick={submitButtom}> Submit Changes</button>
+
+                        </div> 
+
+                } */}
+                
+         
+              
+          
         
-    })}
-        
+ 
+    
+            </>)
+
+})}
    
     </div>)
     
